@@ -4,18 +4,17 @@ import React, { useState } from 'react';
 import Image from 'next/image';
 
 export default function Header() {
-  const [activeLink, setActiveLink] = useState<string>('#home');
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  const handleLinkClick = (link: string) => {
-    setActiveLink(link);
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
   };
 
   return (
-    <header className="fixed top-0 w-full bg-transparent z-50 shadow-md flex items-center justify-between px-5 py-3">
+    <header className="dark:invert fixed top-0 w-full bg-black z-50 shadow-md flex items-center justify-between px-5 py-3">
       {/* Logo */}
       <div className="flex-1">
         <Image
-          className="dark:invert"
           src="/pcquicker.png" // Replace with your logo path
           alt="pcQuicker Logo"
           width={130}
@@ -24,31 +23,38 @@ export default function Header() {
         />
       </div>
 
-      {/* Navigation Links */}
-      <nav className="flex-2 flex justify-center gap-5">
+      {/* Menu Button */}
+      <div className="flex-1 flex justify-end md:hidden">
+        <button
+          onClick={toggleMenu}
+          className= "dark:invert text-white bg-purple-600 px-4 py-2 rounded-md transition-all duration-300 hover:bg-purple-700"
+        >
+          Menu
+        </button>
+      </div>
+
+      {/* Navigation Links (Hidden on mobile) */}
+      <nav 
+        className={`absolute top-16 right-0 bg-black w-full md:static md:flex md:w-auto md:gap-5 md:items-center transition-transform duration-300 ${
+          isMenuOpen ? 'block' : 'hidden'
+        }`}
+      >
         {['#home', '#about', '#services', '#features'].map((link) => (
           <a
             key={link}
             href={link}
-            onClick={() => handleLinkClick(link)}
-            className={`text-sm md:text-base transition-colors duration-300 ${
-              activeLink === link ? 'font-bold text-white' : 'text-gray-300'
-            }`}
+            className="block text-sm md:text-base text-gray-300 px-5 py-3 hover:text-white"
           >
             {link.replace('#', '').charAt(0).toUpperCase() + link.slice(2)}
           </a>
         ))}
-      </nav>
-
-      {/* Contact Us */}
-      <div className="flex-1 flex justify-end">
         <a
           href="#contact"
-          className="text-sm md:text-base font-bold bg-purple-600 text-white  px-4 py-2 rounded-md transition-all duration-300 hover:bg-gray-300 hover:text-black"
+          className="dark:invert block text-sm md:text-base font-bold  text-gray-700 px-5 py-3 rounded-md hover:bg-gray-300 hover:text-black"
         >
           Contact Us
         </a>
-      </div>
+      </nav>
     </header>
   );
 }
