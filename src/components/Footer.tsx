@@ -14,7 +14,8 @@ export default function Footer() {
             className="flex justify-center space-x-3 lg:justify-start"
           >
             <Image
-              src="/trixtern_full.png"
+              className="dark:invert"
+              src="/pcquicker.png"
               alt="Trixtern Technologies"
               width={180}
               height={38}
@@ -22,7 +23,7 @@ export default function Footer() {
             />
           </a>
           <p className="max-w-xs py-2 mx-auto text-sm text-center text-gray-500 dark:text-gray-600 lg:mx-0 lg:text-left">
-          Trixtern Technologies helps businesses streamline workflows and grow with innovative tech solutions.
+          PcQuicker is a customer-focused laptop and desktop servicing platform that brings fast, reliable, and hassle-free repairs right to your doorstep. 
           </p>
           
         </div>
