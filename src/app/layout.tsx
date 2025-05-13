@@ -4,6 +4,7 @@ import "./globals.css";
 
 import Header from "../components/Header";
 import Footer from "../components/Footer";
+import LiveChat from "../components/LiveChat"; // Import the LiveChat component
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -30,9 +31,10 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <Header/>
+        <Header />
         {children}
-        <Footer/>
+        <Footer />
+        <LiveChat /> {/* Add the LiveChat component here */}
       </body>
     </html>
   );
