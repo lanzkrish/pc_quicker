@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export default function Footer() {
   return (
-    <footer className="px-4 divide-y dark:bg-gray-100 dark:text-gray-800 bg-gradient-to-br from-blue-100 via-white to-purple-100 overflow-hidden">
+    <footer className="px-4 divide-y dark:bg-gray-100 dark:text-gray-800 bg-gradient-to-br from-fuchsia-100 via-white to-purple-200 overflow-hidden">
       <div className="container flex flex-col justify-between py-10 mx-auto space-y-8 lg:flex-row lg:space-y-0">
         {/* Logo and Description */}
         <div className="lg:w-1/3">
@@ -14,9 +14,9 @@ export default function Footer() {
             className="flex justify-center space-x-3 lg:justify-start"
           >
             <Image
-              className="dark:invert"
-              src="/pcquicker.png"
-              alt="Trixtern Technologies"
+              // className="dark:invert"
+              src="/pcquicker1.png"
+              alt="PcQuicker Logo"
               width={180}
               height={38}
               priority
@@ -61,7 +61,7 @@ export default function Footer() {
               links: [
                 {
                   name: "LinkedIn",
-                  href: "https://www.linkedin.com/company/trixtern/",
+                  href: "https://www.linkedin.com/company/pcquicker/",
                   icon: (
                     <Image
                       src="/linkedin.svg"
