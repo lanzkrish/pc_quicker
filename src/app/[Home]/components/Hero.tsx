@@ -20,7 +20,7 @@ const Hero = () => {
             Laptop to Peak <br />
             Performance
           </h1>
-          <p className="mb-5 text">Experience lightining fast laptop repairs with our certified technicians. We orioritize transparency and convenience to get you back to work in no time.</p>
+          <p className="mb-5 text">Experience lightining fast laptop repairs with our certified technicians. We prioritize transparency and convenience to get you back to work in no time.</p>
           
           <Link href="/book-now" className="mt-6 bg-fuchsia-600 text-white px-10 py-4  hover:bg-fuchsia-700 transition-colors">
             Book Now

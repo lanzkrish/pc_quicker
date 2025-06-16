@@ -11,7 +11,7 @@ const About = () => {
       <h3 className=' mt-6  md:mt-20 mb-10  text-center md:text-left  text-3xl font-semibold text-purple-600 '>About Us</h3>
         <h2 className="text-3xl font-bold mb-4">Driven by Passion for Computers</h2>
         <p className="mb-4">
-          At pcQuicker.com, we prioritize transparency and convenience in every repair.
+          At PcQuicker, we prioritize transparency and convenience in every repair.
           Our certified technicians provide expert at-home diagnostics to ensure your laptop is in the best hands.
         </p>
         
