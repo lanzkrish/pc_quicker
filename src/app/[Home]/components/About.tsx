@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 
 const About = () => {
   return (
@@ -13,9 +14,10 @@ const About = () => {
           At pcQuicker.com, we prioritize transparency and convenience in every repair.
           Our certified technicians provide expert at-home diagnostics to ensure your laptop is in the best hands.
         </p>
-        <button className="bg-fuchsia-600 text-white px-6 py-3  hover:bg-fuchsia-700 mt-10 ">
+        
+        <Link href="/contact-us" className="text-fuchsia-600 hover:underline mt-4 inline-block">
           LEARN MORE →
-        </button>
+        </Link>
       </div>
       
     </section>
