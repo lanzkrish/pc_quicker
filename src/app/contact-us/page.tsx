@@ -24,7 +24,7 @@ function ContactUs() {
             <input
               type="hidden"
               name="from_name"
-              value="Contact from Trixtern"
+              value="Contact from PcQuicker"
             />
             <input
               type="hidden"
@@ -56,7 +56,7 @@ function ContactUs() {
                   id="first_name"
                   placeholder="First name"
                   required
-                  className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-purple-500"
                 />
               </div>
               <div>
@@ -72,7 +72,7 @@ function ContactUs() {
                   id="lname"
                   placeholder="Last name"
                   required
-                  className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-purple-500"
                 />
               </div>
               <div>
@@ -88,7 +88,7 @@ function ContactUs() {
                   id="email"
                   placeholder="you@company.com"
                   required
-                  className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-purple-500"
                 />
               </div>
               <div>
@@ -104,7 +104,7 @@ function ContactUs() {
                   id="phone"
                   placeholder="+91...."
                   required
-                  className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-purple-500"
                 />
               </div>
             </div>
@@ -121,19 +121,19 @@ function ContactUs() {
                 id="message"
                 placeholder="Your message"
                 required
-                className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-purple-500"
               ></textarea>
             </div>
             <div className="mt-6 text-center flex justify-center items-center flex-col sm:flex-row gap-4">
               <button
                 type="submit"
-                className="w-full md:w-auto px-6 py-3 bg-blue-600 text-white rounded-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                className="w-full md:w-auto px-6 py-3 bg-purple-600 text-white rounded-md hover:bg-purple-700 focus:outline-none focus:ring-2 focus:ring-purple-500"
               >
                 Send Message
               </button>
               <p>or</p>
               <a href="https://calendly.com/lanzkrish/30min" target="_blank" rel="noopener noreferrer" > 
-                  <button  className="w-full md:w-auto px-6 py-3 bg-blue-600 text-white rounded-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                  <button  className="w-full md:w-auto px-6 py-3 bg-purple-600 text-white rounded-md hover:bg-purple-700 focus:outline-none focus:ring-2 focus:ring-purple-500">
                     Schedule a Call
                   </button>
               </a>
