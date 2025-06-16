@@ -27,9 +27,9 @@ type Service = {
   const Services = () => {
     return (
       <section className=" text-black bg-white ">
-         <div className=" py-20 pt-10 max-w-7xl mx-auto px-10">
-          <h3 className='md:ml-20 mt-6 md:mt-20  text-center md:text-left  text-3xl font-semibold text-purple-600'>Our Services</h3>
-        <h2 className="text-3xl md:ml-20 font-bold mb-6 ">We offer Comprehensive Computer Services to meet all your laptop needs.</h2>
+         <div className=" py-20 pt-6 max-w-7xl mx-auto px-10">
+          <h3 className='md:ml-20 mt-0 md:mt-20 mb-6 text-center md:text-left  text-3xl font-semibold text-purple-600'>Our Services</h3>
+        <h2 className="text-xl md:ml-20 font-bold mb-6 ">We offer Comprehensive Computer Services to meet all your laptop needs.</h2>
         <div className="grid md:grid-cols-3 gap-6 px-6 mx-auto max-w-7xl">
           {services.map(({ title, desc, img }, index) => (
             <div key={index} className=" rounded-lg p-4 mx-auto hover:shadow-lg transition-shadow duration-300">

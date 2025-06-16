@@ -31,7 +31,7 @@ const WhyChooseUs = () => {
           Why Choose Our Expert Laptop Repair Services for Your Device?
         </h2>
         <p className="mb-8 max-w-xl">
-          Our mission is to eliminate the frustration that often comes with laptop servicing and create a customer-first experience powered by technology and trust.
+          We aim to banish the headaches of laptop repair, empowering our customers with a service experience that's effortlessly powered by innovation and complete trust.
         </p>
         <div className="max-w-5xl gap-6 mb-8">
           <ul className="grid md:grid-cols-3 gap-4">
