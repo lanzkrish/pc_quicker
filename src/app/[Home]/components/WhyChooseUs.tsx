@@ -31,7 +31,7 @@ const WhyChooseUs = () => {
           Why Choose Our Expert Laptop Repair Services for Your Device?
         </h2>
         <p className="mb-8 max-w-xl">
-          We aim to banish the headaches of laptop repair, empowering our customers with a service experience that's effortlessly powered by innovation and complete trust.
+          We aim to banish the headaches of laptop repair, empowering our customers with a service experience that&apos;s effortlessly powered by innovation and complete trust.
         </p>
         <div className="max-w-5xl gap-6 mb-8">
           <ul className="grid md:grid-cols-3 gap-4">

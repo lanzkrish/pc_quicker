@@ -138,8 +138,8 @@ const BookNowPage: React.FC = () => {
           </div>
           <div className="text-center mt-2">
             <a
-              href="tel:+919124498080"
-              className="w-full inline-block bg-fuchsia-600 hover:bg-fuchsia-700 text-white font-semibold px-4 py-3 rounded-md transition"
+              href="tel:+917978622502"
+              className="w-full inline-block bg-purple-600 hover:bg-purple-700 text-white font-semibold px-4 py-3 rounded-md transition"
             >
               Call Now
             </a>

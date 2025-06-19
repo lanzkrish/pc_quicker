@@ -132,11 +132,12 @@ function ContactUs() {
                 Send Message
               </button>
               <p>or</p>
-              <a href="https://calendly.com/lanzkrish/30min" target="_blank" rel="noopener noreferrer" > 
+              <a href="tel:+917978622502" target="_blank" rel="noopener noreferrer" > 
                   <button  className="w-full md:w-auto px-6 py-3 bg-purple-600 text-white rounded-md hover:bg-purple-700 focus:outline-none focus:ring-2 focus:ring-purple-500">
-                    Schedule a Call
+                    Give a Call
                   </button>
               </a>
+             
             </div>
           </form>
         </div>
