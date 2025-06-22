@@ -2,7 +2,7 @@
 import Link from 'next/link';
 
 const CTA = () => (
-  <section className="bg-gradient-to-r from-purple-100 via-fuchsia-100 to-white py-12 px-6">
+  <section className="bg-gradient-to-r from-purple-300 via-fuchsia-100 to-white py-12 px-6">
     <div className="max-w-5xl mx-auto flex flex-col md:flex-row items-center justify-between gap-8">
       <div className="text-center md:text-left">
         <h2 className="text-3xl font-bold text-purple-600 mb-2">Get Your Laptop Fixed Fast</h2>
