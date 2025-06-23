@@ -132,12 +132,12 @@ function ContactUs() {
                 Send Message
               </button>
               <p>or</p>
-              <a href="tel:+917978622502" target="_blank" rel="noopener noreferrer" > 
-                  <button  className="w-full md:w-auto px-6 py-3 bg-purple-600 text-white rounded-md hover:bg-purple-700 focus:outline-none focus:ring-2 focus:ring-purple-500">
-                    Give a Call
-                  </button>
-              </a>
-             
+              
+             <a
+              href="tel:+917978622502"
+              className="w-full md:w-auto px-6 py-3 bg-purple-600 text-white rounded-md hover:bg-purple-700 focus:outline-none focus:ring-2 focus:ring-purple-500">
+              Call Now
+            </a>
             </div>
           </form>
         </div>
