@@ -34,7 +34,7 @@ function ContactUs() {
             <input
               type="hidden"
               name="subject"
-              value="New Message from Trixtern tech. Web(Contact Us)"
+              value="New Message from PcQuicker.com Web(Contact Us)"
             />
             <input
               type="hidden"

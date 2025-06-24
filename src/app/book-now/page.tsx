@@ -22,7 +22,7 @@ const BookNowPage: React.FC = () => {
           onSubmit={() => setFormStatus("Submitting...")}
         >
           <input type="hidden" name="access_key" value="46707c4f-71eb-43aa-89aa-91beb82e79e7" />
-          <input type="hidden" name="subject" value="New Booking from pcquicker Web(Booking Laptop Service)" />
+          <input type="hidden" name="subject" value="New Booking from pcquicker Web (Booking Laptop Service)" />
           <input type="checkbox" name="botcheck" style={{ display: "none" }} />
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div>
