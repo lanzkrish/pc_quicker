@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 const pcBuildSections = [
   {
@@ -117,12 +118,12 @@ const CustomPCBuild = () => {
           >
             Contact Us
           </a>
-          <a
+          <Link
             href="/book-now"
             className="border border-purple-600 hover:bg-purple-600 hover:text-white text-purple-600 dark:text-purple-500 px-8 py-4 rounded-full text-lg font-medium transition-all shadow-lg"
           >
             Book Now
-          </a>
+          </Link>
         </div>
       </div>
     </section>
