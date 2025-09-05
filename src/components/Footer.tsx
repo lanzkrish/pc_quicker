@@ -4,8 +4,9 @@ import Image from "next/image";
 
 export default function Footer() {
   return (
-    <footer className="px-4 divide-y dark:bg-gray-100 dark:text-gray-800 bg-gradient-to-br from-white via-gray-100 to-purple-200 overflow-hidden">
+    <footer className="px-4 divide-y bg-gradient-to-br from-gray-50 via-gray-100 to-purple-100 dark:from-black dark:via-gray-800 dark:to-gray-900 dark:text-gray-300 overflow-hidden">
       <div className="container flex flex-col justify-between py-10 mx-auto space-y-8 lg:flex-row lg:space-y-0">
+        
         {/* Logo and Description */}
         <div className="lg:w-1/3">
           <a
@@ -14,18 +15,19 @@ export default function Footer() {
             className="flex justify-center space-x-3 lg:justify-start"
           >
             <Image
-              // className="dark:invert"
               src="/pcquicker1.png"
               alt="PcQuicker Logo"
               width={180}
               height={38}
               priority
+              className="dark:invert" // makes logo adapt to dark mode
             />
           </a>
-          <p className="max-w-xs py-2 mx-auto text-sm text-center text-gray-500 dark:text-gray-600 lg:mx-0 lg:text-left">
-          PcQuicker is a customer-focused laptop and desktop servicing platform that brings fast, reliable, and hassle-free repairs right to your doorstep. 
+          <p className="max-w-xs py-2 mx-auto text-sm text-center text-gray-600 dark:text-gray-400 lg:mx-0 lg:text-left">
+            PcQuicker is a customer-focused laptop and desktop servicing
+            platform that brings fast, reliable, and hassle-free repairs right
+            to your doorstep.
           </p>
-          
         </div>
 
         {/* Links Section */}
@@ -48,50 +50,28 @@ export default function Footer() {
                 { name: "Contact Us", href: "/contact-us" },
               ],
             },
-            // {
-            //   title: "Developers",
-            //   links: [
-            //     { name: "Public API", href: "#" },
-            //     { name: "Documentation", href: "#" },
-            //     { name: "Guides", href: "#" },
-            //   ],
-            // },
             {
               title: "Social Media",
               links: [
-                // {
-                //   name: "LinkedIn",
-                //   href: "https://www.linkedin.com/company/pcquicker/",
-                //   icon: (
-                //     <Image
-                //       src="/linkedin.svg"
-                //       alt="LinkedIn logo"
-                //       width={20}
-                //       height={20}
-                //     />
-                //   ),
-                // },
-                // { name: "Facebook", href: "#" },
-                // { name: "Twitter", href: "#" },
-                { name: "Instagram", 
+                {
+                  name: "Instagram",
                   href: "https://www.instagram.com/pc_quicker/",
                   id: "pc_quicker",
                   icon: (
-                  <Image
-                    src="/instagram.svg"
-                    alt="Instagram logo"
-                    width={30}
-                    height={30}
-                  
-                  />
-                ),
+                    <Image
+                      src="/instagram.svg"
+                      alt="Instagram logo"
+                      width={30}
+                      height={30}
+                    />
+                  ),
                 },
               ],
               icons: true,
             },
           ].map((section, index) => (
             <div key={index} className="space-y-3">
-              <h3 className="tracking-wide uppercase dark:text-gray-900">
+              <h3 className="tracking-wide uppercase text-gray-800 dark:text-gray-200">
                 {section.title}
               </h3>
               <ul className="space-y-1">
@@ -103,16 +83,17 @@ export default function Footer() {
                         target="_blank"
                         href={link.href}
                         title={link.name}
-                        className="flex items-center p-1"
+                        className="flex items-center p-1 hover:text-fuchsia-600 dark:hover:text-fuchsia-400"
                       >
                         {"icon" in link && link.icon ? link.icon : link.name}
-                        {"icon" in link && link.id }
+                        {"icon" in link && link.id}
                       </a>
                     ) : (
                       <a
                         rel="noopener noreferrer"
                         target="_blank"
                         href={link.href}
+                        className="hover:text-fuchsia-600 dark:hover:text-fuchsia-400"
                       >
                         {link.name}
                       </a>
@@ -124,7 +105,8 @@ export default function Footer() {
           ))}
         </div>
       </div>
-      <div className="py-6 text-sm text-center dark:text-gray-600">
+
+      <div className="py-6 text-sm text-center text-gray-600 dark:text-gray-400">
         © 2025 Trixtern Tech. All rights reserved.
       </div>
     </footer>

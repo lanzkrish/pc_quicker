@@ -11,7 +11,7 @@ export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <div className="bg-white z-2 border-b border-gray-300">
+    <div className="bg-white dark:bg-black z-2 border-b border-gray-300">
       <header>
         <nav
           className="mx-auto flex max-w-7xl items-center justify-between px-6 lg:px-8"
@@ -22,7 +22,7 @@ export default function Header() {
             <Link href="/" className="-m-1.5 p-1.5">
               <span className="sr-only">Trixtern</span>
               <Image
-                // className="dark:invert"
+                className="dark:invert"
                 src="/pcquicker1.png"
                 alt="Trixtern Technologies"
                 width={180}
@@ -98,20 +98,20 @@ export default function Header() {
         {/* Mobile Menu */}
         {isMenuOpen && (
           <div className="lg:hidden">
-            <div className="space-y-2 px-6 pb-6">
-              <Link href="/" className="block text-sm font-semibold leading-6 text-gray-900">
+            <div className="space-y-2 px-6 pb-6 dark:text-gray-300 dark:bg-black">
+              <Link href="/" className="block text-sm font-semibold leading-6">
                 Home
               </Link>
-              <Link href="/home#about" className="block text-sm font-semibold leading-6 text-gray-900">
+              <Link href="/home#about" className="block text-sm font-semibold leading-6 ">
                 About
               </Link>
-              <Link href="/pc-build" className="block text-sm font-semibold leading-6 text-gray-900">
+              <Link href="/pc_build" className="block text-sm font-semibold leading-6">
                 Custom PC Build
               </Link>
-              <Link href="/home#services" className="block text-sm font-semibold leading-6 text-gray-900">
+              <Link href="/home#services" className="block text-sm font-semibold leading-6">
                 Services
               </Link>
-              <Link href="/home#faq" className="block text-sm font-semibold leading-6 text-gray-900">
+              <Link href="/home#faq" className="block text-sm font-semibold leading-6 ">
                 FAQ&apos;s
               </Link>
               {/* <Link href="/blogs" className="block text-sm font-semibold leading-6 text-gray-900">
@@ -121,7 +121,7 @@ export default function Header() {
               {/* <Link href="/careers" className="block text-sm font-semibold leading-6 text-gray-900">
                 Careers
               </Link> */}
-              <Link href="/contact-us" className="block text-sm font-semibold leading-6 text-gray-900">
+              <Link href="/contact-us" className="block text-sm font-semibold leading-6 ">
                 Contact Us
               </Link>
             </div>

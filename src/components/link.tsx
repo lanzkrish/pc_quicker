@@ -20,7 +20,7 @@ export default function CustomLink({ href, children }: CustomLinkProps) {
       href={href}
       className={`text-sm leading-6 hover:text-blue-500 ${
         isActive ? "text-red-400 font-semibold" : "font-light"
-      } text-gray-900`}
+      } text-gray-900 dark:text-gray-300 `}
     >
       {children}
     </Link>

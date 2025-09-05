@@ -26,7 +26,7 @@ type Service = {
   
   const Services = () => {
     return (
-      <section className=" text-black bg-white ">
+      <section className=" text-black bg-white dark:bg-black dark:text-white transition-colors duration-500" id="services">
          <div className=" py-20 pt-6 max-w-7xl mx-auto px-10">
           <h3 className='md:ml-20 mt-0 md:mt-20 mb-6 text-center md:text-left  text-3xl font-semibold text-purple-600'>Our Services</h3>
         <h2 className="text-xl md:ml-20 font-bold mb-6 ">We offer Comprehensive Computer Services to meet all your laptop needs.</h2>
@@ -39,7 +39,7 @@ type Service = {
                 height={316}
                  />
               <h3 className="font-semibold">{title}</h3>
-              <p className="text-sm text-gray-600">{desc}</p>
+              <p className="text-sm text-gray-700 dark:text-gray-300">{desc}</p>
             </div>
           ))}
         </div>

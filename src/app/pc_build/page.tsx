@@ -5,7 +5,7 @@ const pcBuildSections = [
     title: "Tailored Performance",
     description:
       "Select the perfect balance of CPU, GPU, RAM, and storage to match your gaming, creative, or professional needs. Every build is uniquely optimized for you.",
-    image: "/pc_build/pc_performance.jpg", // replace with your vertical/horizontal image
+    image: "/pc_build/pc_performance.jpg",
     orientation: "left",
   },
   {
@@ -47,35 +47,21 @@ const pcBuildSections = [
 
 const CustomPCBuild = () => {
   return (
-    <section className="bg-black text-white mb-5">
-      {/* Page Header */}
-      {/* <div className="max-w-6xl mx-auto px-6 py-20 text-center">
-        <h1 className="text-5xl font-bold text-purple-600 mb-6">
-          Build Your Dream Custom PC
-        </h1>
-        <p className="text-lg text-gray-300 max-w-2xl mx-auto">
-          Designed for power, performance, and aesthetics—crafted with the same
-          precision and elegance you expect from world-class machines.
-        </p>
-      </div> */}
-
-      {/* Hero Header with Background Image */}
-      <div className="relative w-full h-[700px] flex items-center justify-center">
-        {/* Background Image */}
+    <section className="bg-white text-gray-900 dark:bg-black dark:text-white transition-colors duration-500">
+      {/* Hero Header */}
+      <div className="relative w-full h-[400px] flex items-center justify-center">
         <Image
-          src="/pc_build/pc_hero.jpg" // Replace with your hero background image
+          src="/pc_build/pc_hero.jpg"
           alt="Custom PC Background"
           fill
           priority
-          className="object-cover object-center brightness-25"
+          className="object-cover object-center brightness-45"
         />
-
-        {/* Overlay Text */}
         <div className="relative z-10 text-center px-6">
-          <h1 className="text-5xl md:text-6xl font-bold text-purple-500 mb-6 drop-shadow-lg">
+          <h1 className="text-5xl md:text-6xl font-bold text-purple-600 dark:text-purple-500 mb-6 drop-shadow-lg">
             Build Your Dream Custom PC
           </h1>
-          <p className="text-lg md:text-xl text-gray-200 max-w-2xl mx-auto">
+          <p className="text-lg md:text-xl text-gray-700 dark:text-gray-200 max-w-2xl mx-auto">
             Crafted for performance, aesthetics, and future-proof power.
           </p>
         </div>
@@ -103,19 +89,44 @@ const CustomPCBuild = () => {
 
             {/* Text */}
             <div className="w-full md:w-1/2 text-center md:text-left">
-              <h2 className="text-3xl font-bold mb-4 text-purple-600">
+              <h2 className="text-3xl font-bold mb-4 text-purple-600 dark:text-purple-500">
                 {section.title}
               </h2>
-              <p className="text-gray-300 text-lg leading-relaxed">
+              <p className="text-gray-700 dark:text-gray-300 text-lg leading-relaxed">
                 {section.description}
               </p>
             </div>
           </div>
         ))}
       </div>
+
+      {/* Book Now / Contact Us Section */}
+      <div className="py-20 text-center border-t border-gray-200 dark:border-gray-800 transition-colors">
+        <h2 className="text-4xl font-bold text-purple-600 dark:text-purple-500 mb-6">
+          Ready to Build Your PC?
+        </h2>
+        <p className="text-gray-700 dark:text-gray-300 text-lg mb-8 max-w-2xl mx-auto">
+          Get in touch with our experts and bring your dream setup to life.
+        </p>
+        <div className="flex justify-center gap-6">
+          <a
+            href="https://wa.me/yourwhatsapplink"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-purple-600 hover:bg-purple-700 text-white px-8 py-4 rounded-full text-lg font-medium transition-all shadow-lg"
+          >
+            Contact Us
+          </a>
+          <a
+            href="/book-now"
+            className="border border-purple-600 hover:bg-purple-600 hover:text-white text-purple-600 dark:text-purple-500 px-8 py-4 rounded-full text-lg font-medium transition-all shadow-lg"
+          >
+            Book Now
+          </a>
+        </div>
+      </div>
     </section>
   );
 };
 
 export default CustomPCBuild;
- 

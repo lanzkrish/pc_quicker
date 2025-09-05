@@ -30,7 +30,7 @@ const FAQ = () => {
   const [open, setOpen] = useState<number | null>(null);
 
   return (
-    <section className="px-6 py-20 bg-white text-black ">
+    <section className="px-6 py-20 bg-white text-black dark:bg-black dark:text-white transition-colors duration-500" id="faq">
 
         <div className='max-w-3xl mx-auto text-center'>
         <h2 className="text-3xl font-bold mb-6 text-purple-600">Frequently Asked Questions</h2>
@@ -49,13 +49,23 @@ const FAQ = () => {
       </div>
        
 
-      <div className='mt-20 mx-auto max-w-3xl text-center'>
-        <h2 className="text-3xl font-bold mb-6 text-purple-600">Still have questions?</h2>
-        <p>We are here to help you with any inquiries.</p>
-        <Link href="/contact-us" className="mt-6 inline-block text-fuchsia-600 px-6 py-3 border border-fuchsia-600 hover:bg-fuchsia-100 transition-colors" target="_blank" rel="noopener noreferrer">
-          Contact
-        </Link>
-      </div>
+      <div className="mt-20 mx-auto max-w-3xl text-center transition-colors duration-500">
+  <h2 className="text-3xl font-bold mb-6 text-purple-600">
+    Still have questions?
+  </h2>
+  <p className="text-gray-700 dark:text-gray-300">
+    We are here to help you with any inquiries.
+  </p>
+  <Link
+    href="/contact-us"
+    className="mt-6 inline-block text-fuchsia-600 dark:text-fuchsia-300 px-6 py-3 border border-fuchsia-600 hover:bg-fuchsia-100 dark:hover:bg-fuchsia-900 transition-colors duration-300"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    Contact
+  </Link>
+</div>
+
     </section>
   );
 };
