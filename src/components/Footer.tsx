@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export default function Footer() {
   return (
-    <footer className="px-4 divide-y dark:bg-gray-100 dark:text-gray-800 bg-gradient-to-br from-fuchsia-100 via-white to-purple-200 overflow-hidden">
+    <footer className="px-4 divide-y dark:bg-gray-100 dark:text-gray-800 bg-gradient-to-br from-white via-gray-100 to-purple-200 overflow-hidden">
       <div className="container flex flex-col justify-between py-10 mx-auto space-y-8 lg:flex-row lg:space-y-0">
         {/* Logo and Description */}
         <div className="lg:w-1/3">
@@ -34,46 +34,58 @@ export default function Footer() {
             {
               title: "Product",
               links: [
-                // { name: "Interncify", href: "https://interncify.com" },
-                { name: "Features", href: "#" },
-                { name: "Integrations", href: "#" },
-                { name: "Pricing", href: "#" },
-                { name: "FAQ", href: "#" },
+                { name: "Services", href: "/home#services" },
+                { name: "CustomBuilds", href: "/pc_build" },
+                { name: "Pricing", href: "contact-us" },
+                { name: "FAQ", href: "/home#faq" },
               ],
             },
             {
               title: "Company",
               links: [
-                { name: "Privacy", href: "/privacy&policy" },
-                { name: "Terms of Service", href: "/terms-of-service" },
+                { name: "Privacy Policy", href: "/privacy-policy" },
+                { name: "Terms & Conditions", href: "/terms&conditions" },
+                { name: "Contact Us", href: "/contact-us" },
               ],
             },
-            {
-              title: "Developers",
-              links: [
-                { name: "Public API", href: "#" },
-                { name: "Documentation", href: "#" },
-                { name: "Guides", href: "#" },
-              ],
-            },
+            // {
+            //   title: "Developers",
+            //   links: [
+            //     { name: "Public API", href: "#" },
+            //     { name: "Documentation", href: "#" },
+            //     { name: "Guides", href: "#" },
+            //   ],
+            // },
             {
               title: "Social Media",
               links: [
-                {
-                  name: "LinkedIn",
-                  href: "https://www.linkedin.com/company/pcquicker/",
-                  icon: (
-                    <Image
-                      src="/linkedin.svg"
-                      alt="LinkedIn logo"
-                      width={20}
-                      height={20}
-                    />
-                  ),
-                },
+                // {
+                //   name: "LinkedIn",
+                //   href: "https://www.linkedin.com/company/pcquicker/",
+                //   icon: (
+                //     <Image
+                //       src="/linkedin.svg"
+                //       alt="LinkedIn logo"
+                //       width={20}
+                //       height={20}
+                //     />
+                //   ),
+                // },
                 // { name: "Facebook", href: "#" },
                 // { name: "Twitter", href: "#" },
-                // { name: "Instagram", href: "#" },
+                { name: "Instagram", 
+                  href: "https://www.instagram.com/pc_quicker/",
+                  id: "pc_quicker",
+                  icon: (
+                  <Image
+                    src="/instagram.svg"
+                    alt="Instagram logo"
+                    width={30}
+                    height={30}
+                  
+                  />
+                ),
+                },
               ],
               icons: true,
             },
@@ -94,6 +106,7 @@ export default function Footer() {
                         className="flex items-center p-1"
                       >
                         {"icon" in link && link.icon ? link.icon : link.name}
+                        {"icon" in link && link.id }
                       </a>
                     ) : (
                       <a

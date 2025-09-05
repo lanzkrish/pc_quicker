@@ -80,6 +80,7 @@ export default function Header() {
           <div className="hidden lg:flex lg:gap-x-12">
             <CustomLink href="../">Home</CustomLink>
             <CustomLink href="/home#about">About</CustomLink>
+            <CustomLink href="/pc_build">Custom PC Build</CustomLink>
             <CustomLink href="/home#services">Services</CustomLink>
             <CustomLink href="/home#faq">FAQ&apos;s</CustomLink>
             {/* <CustomLink href="/blogs">Blogs & Insights</CustomLink> */}
@@ -103,6 +104,9 @@ export default function Header() {
               </Link>
               <Link href="/home#about" className="block text-sm font-semibold leading-6 text-gray-900">
                 About
+              </Link>
+              <Link href="/pc-build" className="block text-sm font-semibold leading-6 text-gray-900">
+                Custom PC Build
               </Link>
               <Link href="/home#services" className="block text-sm font-semibold leading-6 text-gray-900">
                 Services
