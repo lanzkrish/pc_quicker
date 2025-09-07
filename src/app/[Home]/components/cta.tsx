@@ -13,12 +13,12 @@ const CTA = () => (
         service today and enjoy transparent pricing and timely updates.
       </p>
     </div>
-    <Link
-      href="/book-now"
-      className="inline-block px-4 py-3 bg-fuchsia-600 text-white font-semibold hover:bg-fuchsia-600 dark:hover:bg-fuchsia-500 transition-colors text-lg shadow"
-    >
-      Book Now
-    </Link>
+    
+     <Link
+            href="/book-now"
+            className=" bg-purple-600 hover:bg-purple-700 hover:text-white text-white dark:text-gray-100 px-8 py-4 rounded-full text-lg font-medium transition-all shadow-lg">
+            Book Now
+          </Link>
   </div>
 </section>
 

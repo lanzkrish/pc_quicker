@@ -58,7 +58,7 @@ const FAQ = () => {
   </p>
   <Link
     href="/contact-us"
-    className="mt-6 inline-block text-fuchsia-600 dark:text-fuchsia-300 px-6 py-3 border border-fuchsia-600 hover:bg-fuchsia-100 dark:hover:bg-fuchsia-900 transition-colors duration-300"
+    className="mt-6 inline-block text-purple-600 dark:text-purple-300 px-6 py-3 border border-purple-600 hover:bg-purple-100 dark:hover:bg-purple-900 transition-colors duration-300 rounded-full"
     target="_blank"
     rel="noopener noreferrer"
   >

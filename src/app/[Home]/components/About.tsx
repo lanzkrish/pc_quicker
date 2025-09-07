@@ -15,7 +15,7 @@ const About = () => {
           Our certified technicians provide expert at-home diagnostics to ensure your laptop is in the best hands.
         </p>
         
-        <Link href="/contact-us" className="text-fuchsia-600 hover:underline mt-4 inline-block">
+        <Link href="/contact-us" className="text-purple-600 hover:underline mt-4 inline-block">
           LEARN MORE →
         </Link>
       </div>

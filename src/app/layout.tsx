@@ -6,6 +6,9 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import LiveChat from "../components/LiveChat"; // Import the LiveChat component
 
+import ReactLenis from "lenis/react"; // Import ReactLenis
+
+
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -28,6 +31,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <ReactLenis root> {/* Wrap the application with ReactLenis */}
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
@@ -36,6 +40,7 @@ export default function RootLayout({
         <Footer />
         <LiveChat /> {/* Add the LiveChat component here */}
       </body>
+      </ReactLenis>
     </html>
   );
 }

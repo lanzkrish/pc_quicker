@@ -89,7 +89,7 @@ export default function Header() {
 
           {/* Contact Us Button */}
           <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-            <Link href="/contact-us" className="text-sm font-semibold leading-6 text-gray-900">
+            <Link href="/contact-us" className="text-sm font-semibold leading-6 text-gray-900 dark:text-purple-500">
               Contact Us <span aria-hidden="true">&rarr;</span>
             </Link>
           </div>

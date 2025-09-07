@@ -20,9 +20,9 @@ const Hero = () => {
             Laptop to Peak <br />
             Performance
           </h1>
-          <p className="mb-5 text">Experience lightining fast laptop repairs with our certified technicians. We prioritize transparency and convenience to get you back to work in no time.</p>
+          <p className="mb-10 text">Experience lightining fast laptop repairs with our certified technicians. We prioritize transparency and convenience to get you back to work in no time.</p>
           
-          <Link href="/book-now" className="mt-6 bg-fuchsia-600 text-white px-10 py-4  hover:bg-fuchsia-700 transition-colors">
+          <Link href="/book-now" className=" bg-purple-600 text-white px-12 py-6  hover:bg-purple-700 transition-colors rounded-full text-lg font-medium shadow-lg">
             Book Now
           </Link>
         </div>

@@ -56,13 +56,13 @@ const CustomPCBuild = () => {
           alt="Custom PC Background"
           fill
           priority
-          className="object-cover object-center brightness-45"
+          className="object-cover object-center brightness-95 dark:brightness-45 blur-sm dark:blur-none"
         />
         <div className="relative z-10 text-center px-6">
-          <h1 className="text-5xl md:text-6xl font-bold text-purple-600 dark:text-purple-500 mb-6 drop-shadow-lg">
+          <h1 className="text-5xl md:text-6xl font-bold text-purple-600 dark:text-purple-500 mb-6 drop-shadow-lg ">
             Build Your Dream Custom PC
           </h1>
-          <p className="text-lg md:text-xl text-gray-700 dark:text-gray-200 max-w-2xl mx-auto">
+          <p className="text-lg md:text-xl text-gray-300 dark:text-gray-200 max-w-2xl mx-auto ">
             Crafted for performance, aesthetics, and future-proof power.
           </p>
         </div>
@@ -110,14 +110,14 @@ const CustomPCBuild = () => {
           Get in touch with our experts and bring your dream setup to life.
         </p>
         <div className="flex justify-center gap-6">
-          <a
-            href="https://wa.me/yourwhatsapplink"
+          <Link
+            href="https://wa.me/7978622502"
             target="_blank"
             rel="noopener noreferrer"
             className="bg-purple-600 hover:bg-purple-700 text-white px-8 py-4 rounded-full text-lg font-medium transition-all shadow-lg"
           >
             Contact Us
-          </a>
+          </Link>
           <Link
             href="/book-now"
             className="border border-purple-600 hover:bg-purple-600 hover:text-white text-purple-600 dark:text-purple-500 px-8 py-4 rounded-full text-lg font-medium transition-all shadow-lg"
